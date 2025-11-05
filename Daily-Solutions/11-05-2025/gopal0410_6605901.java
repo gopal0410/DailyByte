@@ -27,7 +27,7 @@ public class gopal0410_6605901 {
     }
 
     public int wordCount_usingSpace(String sentence) {
-        if (sentence.length() == 0) { //Checks if the sentence is empty
+        if (sentence.length() == 0 || sentence.length() == 1 && sentence.charAt(0) == ' ') { //Checks if the sentence is empty
             return 0;
         }
         int count = 1; //Counts spaces
