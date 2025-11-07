@@ -27,13 +27,13 @@ public class gopal0410_6605901 {
     }
 
     public int wordCount_usingSpace(String sentence) {
-        if (sentence.length() == 0 || sentence.length() == 1 && sentence.charAt(0 ) == ' ') { //Checks if the sentence is empty
+        if (sentence.length() == 0) { //Checks if the sentence is empty
             return 0;
         }
         int count = 1; //Counts spaces
 
         //In case the first character is a space, we need to make sure that it does not count the 1st word as the 2nd word
-        if (sentence.charAt(0) == ' ') {
+        if (sentence.charAt(0) == ' ' && sentence.charAt(1) == ' ') {
             count--;
         }
         for (int i = 1; i < sentence.length() - 1; i++) {
